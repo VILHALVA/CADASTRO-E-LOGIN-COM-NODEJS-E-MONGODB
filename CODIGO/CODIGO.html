@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #555;
+            background-color: #444;
+            color: #fff;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #00bcd4;
+        }
+        
+        input[type="submit"] {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="/formulario">
+        <label for="email">EMAIL:</label>
+        <input type="email" name="email" id="email" required autocomplete="off"> <br>
+
+        <label for="senha">SENHA:</label>
+        <input type="password" name="senha" id="senha" required autocomplete="off"> <br>
+
+        <input type="submit" name="cadastrar" value="CADASTRAR">
+        <input type="submit" name="login" value="LOGIN">
+    </form>
+</body>
+</html>

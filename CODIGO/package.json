@@ -1,0 +1,14 @@
+{
+    "name": "cadastro-login",
+    "version": "1.0.0",
+    "description": "Cadastro e Login de usuário com MySQL e Node.js",
+    "main": "server.js",
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "dotenv": "^16.4.4",
+        "express": "^4.17.1",
+        "mongodb": "^6.3.0",
+        "mongoose": "^8.1.2",
+        "mysql": "^2.18.1"
+    }
+}
